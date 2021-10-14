@@ -17,7 +17,7 @@ while True:
     print("rotating ip now")
     randregion = random.choice(regions)
     print(randregion)
-    os.system("C:\Program Files (x86)\Windscribe windscribe-cli.exe connect " + str(randregion))
+    os.system('cd "C:\Program Files (x86)\Windscribe" && windscribe-cli.exe connect Sydney')
     print("connected at " + str(currenttime))
     print("waiting " + str(timetowait) + " minutes")
     print("-----------------------------------------")
